@@ -1,5 +1,6 @@
 .burger {
     display: none;
+    outline: none;
     @media screen and (max-width: 768px) {
         display: inline-block;
     }
@@ -21,5 +22,25 @@
     }
     &::after {
         margin-top: 4px;
-    } 
+    }
+}
+#toggle {
+    display: none;
+    outline: none;
+    &:checked {
+        + .menu {
+            right: 0;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+                background-color: $black;
+                opacity: $opacity05;
+            }
+        }
+    }
 }

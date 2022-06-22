@@ -50,24 +50,24 @@
         }
     }
     &__burger {
-        &:focus-within {
-            @media screen and (max-width: 768px) {
-                + .menu {
-                    right: 0;
-                    &:after {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left: -100%;
-                        right: 0;
-                        bottom: 0;
-                        z-index: 1;
-                        background-color: $black;
-                        opacity: $opacity05;
-                    }
-                }
-            }
-        }
+        // &:focus-within {
+        //     @media screen and (max-width: 768px) {
+        //         + .menu {
+        //             right: 0;
+        //             &:after {
+        //                 content: '';
+        //                 position: absolute;
+        //                 top: 0;
+        //                 left: -100%;
+        //                 right: 0;
+        //                 bottom: 0;
+        //                 z-index: 1;
+        //                 background-color: $black;
+        //                 opacity: $opacity05;
+        //             }
+        //         }
+        //     }
+        // }
     }
     &__menu {
         + .header {
