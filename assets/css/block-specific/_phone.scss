@@ -10,12 +10,11 @@
             justify-content: center;
     padding: 8px;
     text-decoration: none;
-    @media screen and (min-width: 769px) and (max-width: 900px) {
-        pointer-events: all;
-    }
-
     @media screen and (min-width: 376px) {
         pointer-events: none;
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+        pointer-events: all;
     }
     &__icon {
         width: 24px;
