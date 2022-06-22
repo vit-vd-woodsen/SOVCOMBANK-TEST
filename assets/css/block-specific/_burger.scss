@@ -1,0 +1,25 @@
+.burger {
+    display: none;
+    @media screen and (max-width: 768px) {
+        display: inline-block;
+    }
+    &__line {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background-color: $orange;
+    }
+    &::before, &::after {
+        content: '';
+        display: block;
+        width: 22px;
+        height: 2px;
+        background-color: $orange;
+    }
+    &::before {
+        margin-bottom: 4px;
+    }
+    &::after {
+        margin-top: 4px;
+    } 
+}

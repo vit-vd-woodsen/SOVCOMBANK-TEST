@@ -1,0 +1,43 @@
+.phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 8px;
+    text-decoration: none;
+    @media screen and (min-width: 376px) {
+        pointer-events: none;
+    }
+    &__icon {
+        width: 24px;
+        height: 24px;
+        + .phone {
+            &__number {
+                margin-left: 10px;
+            }
+        }
+    }
+    &__number {
+        display: none;
+        font-family: $roboto;
+        font-style: $font-style-normal;
+        font-weight: $font-weight-500;
+        font-size: 18px;
+        line-height: 24px;
+        color: $white-50;
+        @media screen and (min-width: 900px) {
+            display: inline-block;
+        }
+        @media screen and (max-width: 768px) {
+            display: inline-block;
+        }
+        @media screen and (max-width: 375px) {
+            display: none;
+        }
+    }
+}
